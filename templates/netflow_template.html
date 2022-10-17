@@ -1,0 +1,14 @@
+{
+    "subscriberId": "{{ fake.first_name() }}",
+    "srcIP": "{{ fake.ipv4() }}",
+    "dstIP": "{{ fake.ipv4(address_class=b) }}",
+    "srcPort": {{ fake.port_number() }},
+    "dstPort": {{ fake.port_number() }},
+    "txBytes": {{ fake.pyint() }},
+    "rxBytes": {{ fake.pyint() }},
+    "startTime": {{ fake.unix_time(start_datetime = now()) }},
+    "endTime": {{ fake.unix_time(start_datetime = now()) }},
+    "tcpFlag": 0,
+    "protocolName": "tcp",
+    "protocolNumber": 0
+   }
